@@ -9,25 +9,97 @@
         <link rel="stylesheet" href="css/site.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="./img/logo.png" class="logo" alt="logo sylvain langler" width="45" height="90">
-                <img src="./img/hamburger.png" class="hamburger" alt="menu" width="60" height="60">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">CV</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="accueil">
+            <header>
+                <nav>
+                    <img src="./img/logo.png" class="logo" alt="logo sylvain langler" width="45" height="90">
+                    <img src="./img/hamburger.png" class="hamburger" alt="menu" width="60" height="60">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="intro">
+                <h1>Sylvain Langler</h1>
+                <h2>Développeur Web</h2>
+            </div>
+        </div>
         <main>
             <div class="container">
+                <div class="titre">
+                    A PROPOS
+                </div>
+                <div class="presentation">
+                    <div class="pres_texte">
+                        <div class="bienvenue">
+                            Bienvenue sur mon site personnel !
+                        </div>
+                        <div class="texte">
+                                Je m'appelle Sylvain Langler, j'ai 20 ans et je suis étudiant à Polytech Nice'Sophia en première année de cycle d'ingénieur en sciences informatiques. Je suis passionné par la conception et le dévelopement d'applications web.
+                        </div>
+                        <div class="texte">
+                                Sur ce site vous trouverez les différents projets que j'ai réalisés pendant mon DUT MMI (Métiers du Multimédia et de l'Internet) en Arles, mais aussi les projets réalisés à Polytech et ceux développés lors de stages.
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/sylvainlangler.jpg" width="272" height="292" alt="photo sylvain langler">
+                    </div>
+                </div>
+
+                <div class="titre">
+                    MES PROJETS RECENTS
+                </div>
+                <div class="projets_recents">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="img/musee_arles.jpg" width="476" height="291" alt="musée arles antique">
+                                <span>Titre projet</span>
+                            </a>
+                        </div>
+                        <div class="card-titre">
+                            <a href="#">Application Web</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="img/musee_arles.jpg" width="476" height="291" alt="musée arles antique">
+                                <span>Titre projet</span>
+                            </a>
+                        </div>
+                        <div class="card-titre">
+                            <a href="#">Application Web</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="img/musee_arles.jpg" width="476" height="291" alt="musée arles antique">
+                                <span>Titre projet</span>
+                            </a>
+                        </div>
+                        <div class="card-titre">
+                            <a href="#">Application Web</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <button type="button" class="btn-decouvrir-projets">Découvrir mes projets</button>
+                </a>
             </div>
         </main>
         <footer>
-            <div class="footer">
-                
+            <div class="contact_me">
+                <a href="#">Me contacter</a>
+            </div>
+            <div class="footer-infos">
+                    Pensé par Sylvain Langler
+                    Développé avec Symfony par Sylvain Langler
+                    © Tous droits réservés Sylvain Langler - 2019
             </div>
         </footer>
     </body>

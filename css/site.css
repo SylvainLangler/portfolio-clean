@@ -368,7 +368,7 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
-  padding: 10px;
+  padding: 18px;
   width: 90%;
 }
 
@@ -417,9 +417,246 @@ header nav ul li a:hover {
 }
 
 body {
+  background-color: #0b141e;
+}
+
+.accueil {
   background-image: url("./../img/fond_accueil.webp");
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: -75px;
+  height: 900px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.accueil .intro {
+  text-align: center;
+  color: white;
+  background-color: rgba(10, 27, 45, 0.4);
+  margin: 13em auto;
+  padding: 20px;
+}
+
+.accueil .intro h1 {
+  font-size: 2.5em;
+}
+
+.accueil .intro h2 {
+  font-size: 2em;
+}
+
+.container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 20px 0 20px;
+}
+
+.container .titre {
+  margin-top: 30px;
+  font-size: 2.5em;
+  color: #4CCB83;
+}
+
+.container .presentation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.container .presentation .pres_texte {
+  color: white;
+  margin-top: 15px;
+}
+
+.container .presentation .pres_texte .bienvenue {
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+.container .presentation .pres_texte .texte {
+  font-size: 1.1em;
+  margin-top: 25px;
+}
+
+.container .presentation .photo {
+  margin-top: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container .presentation .photo img {
+  border-radius: 4px;
+}
+
+.container .projets_recents {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.container .projets_recents .card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.container .projets_recents .card .card-image {
+  overflow: hidden;
+  height: 100%;
+}
+
+.container .projets_recents .card .card-image a {
+  color: white;
+  text-decoration: none;
+}
+
+.container .projets_recents .card .card-image a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .projets_recents .card .card-image a span {
+  display: none;
+  position: relative;
+  top: -100px;
+}
+
+.container .projets_recents .card .card-titre {
+  background-color: #0a1b2d;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.3em;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.container .projets_recents .card .card-titre a {
+  color: white;
+  text-decoration: none;
+}
+
+.container .projets_recents .card:hover .card-titre a {
+  color: #4ccb83;
+}
+
+.container .projets_recents .card:hover {
+  box-shadow: 0px 5px 25px -10px #092121;
+}
+
+.container .projets_recents .card:hover .card-image a img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.2;
+}
+
+.container .projets_recents .card:hover .card-image a span {
+  /*display:initial;*/
+}
+
+.container .btn-decouvrir-projets {
+  cursor: pointer;
+  border: 1px solid #4CCB83;
+  border-radius: 4px;
+  width: 250px;
+  height: 70px;
+  font-size: 18px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: #4CCB83;
+  margin-left: 30px;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+.container .btn-decouvrir-projets:hover {
+  background-color: #4CCB83;
+  color: #0a1b2d;
+}
+
+footer {
+  margin-top: 7em;
+  border-top: 2px solid #4CCB83;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+footer .contact_me {
+  margin-top: 15px;
+  font-size: 1.7em;
+}
+
+footer .contact_me a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .contact_me a:hover {
+  color: #4CCB83;
+}
+
+footer .footer-infos {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .accueil .intro {
+    width: 50%;
+    margin-top: 11em;
+    display: initial !important;
+  }
+  .presentation {
+    -ms-flex-direction: row !important;
+        flex-direction: row !important;
+  }
+  .presentation .pres_texte {
+    width: 60%;
+  }
+  .presentation .photo {
+    width: 40%;
+    text-align: center;
+  }
+  .card {
+    width: 44%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accueil .intro {
+    width: 30%;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=site.css.map */
