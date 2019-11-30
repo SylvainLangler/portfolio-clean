@@ -514,6 +514,10 @@ body {
   border-bottom-right-radius: 7px;
 }
 
+.container .projets_recents .card span {
+  display: none;
+}
+
 .container .projets_recents .card .card-image {
   overflow: hidden;
   height: 100%;
@@ -528,12 +532,6 @@ body {
   width: 100%;
   height: 100%;
   transition: 0.5s;
-}
-
-.container .projets_recents .card .card-image a span {
-  display: none;
-  position: relative;
-  top: -100px;
 }
 
 .container .projets_recents .card .card-titre {
@@ -564,8 +562,14 @@ body {
   opacity: 0.2;
 }
 
-.container .projets_recents .card:hover .card-image a span {
-  /*display:initial;*/
+.container .projets_recents .card:hover span {
+  position: relative;
+  display: initial;
+  top: 120px;
+  left: 163px;
+  height: 0;
+  color: white;
+  font-size: 25px;
 }
 
 .container .btn-decouvrir-projets {
