@@ -565,8 +565,8 @@ body {
 .container .projets_recents .card:hover span {
   position: relative;
   display: initial;
-  top: 120px;
-  left: 163px;
+  top: 110px;
+  left: 140px;
   height: 0;
   color: white;
   font-size: 25px;
